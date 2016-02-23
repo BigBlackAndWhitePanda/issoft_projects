@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StyleSwitcher</title>
+    <link class="style" id="styleChangerLink" rel="stylesheet" href="css/mainstyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('select').click(function(){
+                var theme = $(this).val();
+                $(".style").attr('href', theme);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>My Awesome and Beautiful Heading</h1>
+<div class="container">
+    <div class="content">
+        <h1 class="heading">Style Switcher</h1>
+        <div class="switcher">
+            <label for="styleSwitcher">Choose your theme: </label>
+            <select id="styleSwitcher">
+                <option value="css/mainstyles.css">Default theme</option>
+                <option value="css/altColorShemeRed.css">Red theme</option>
+                <option value="css/altColorShemeAqua.css">Aqua theme</option>
+                <option value="css/altColorShemeGreen.css">Green theme</option>
+            </select>
+        </div>
+        <img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-23/256/Kung-Fu-Panda-1-icon.png" alt="VERY HOT PHOTO">
+    </div>
+</div>
+
+</body>
+</html>
