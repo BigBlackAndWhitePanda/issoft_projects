@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,
+body{
+    height:100%;
+    width:100%;
+
+}
+
+.container{
+    height:100%;
+    width:100%;
+
+}
+
+.wrapper{
+    margin: 60px auto;
+    padding:10px;
+    box-shadow:0 0 22px #000;
+    width:1000px;
+    height:700px;
+}
+
+.carousel{
+    width:1000px;
+    height:700px;
+    overflow: hidden;
+}
+
+.carousel ul{
+    width:6000px;
+    height:700px;
+    list-style: none;
+
+}
+
+.carousel ul li{
+    float: left;
+    width:1000px;
+    height:700px;
+
+}
+
+.carousel ul li img{
+    width:1000px;
+    height: 700px;
+}
+
+h1 {
+    padding-top:15px;
+    height:80px;
+    font-size: 65px;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px silver,
+    -1px 1px 1px silver;
+    transition: all .5s;
+    text-align: center;
+    color: #ffffff;
+    line-height:100%;
+    white-space: nowrap;
+
+
+}
+h1:hover {
+    text-shadow: -1px -1px 1px silver,
+    1px -1px 1px silver;
+    color: #999;
+}

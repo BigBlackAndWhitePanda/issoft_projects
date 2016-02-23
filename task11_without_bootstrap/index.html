@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+       $(function(){
+           setInterval(function(){
+               $(".carousel ul").animate({marginLeft:"-1000px"},2000, function () {
+
+                   $(this).find("li:last").after($(this).find("li:first"));
+                   $(this).css({marginLeft:0});
+
+               });
+
+           }, 4000);
+
+       })
+
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Carousel</h1>
+    <div class="wrapper">
+        <div class="carousel">
+            <ul>
+                <li><img src="images/pic1.jpg" alt="pic1"></li>
+                <li><img src="images/pic2.jpg" alt="pic2"></li>
+                <li><img src="images/pic3.jpeg" alt="pic3"></li>
+                <li><img src="images/pic4.jpg" alt="pic4"></li>
+                <li><img src="images/pic5.jpg" alt="pic5"></li>
+                <li><img src="images/pic6.jpg" alt="pic6"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
